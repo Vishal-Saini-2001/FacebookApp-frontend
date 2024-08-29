@@ -40,8 +40,6 @@ const Login = () => {
 
     return (
         <div>
-            <div id="fb-root"></div>
-            <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v20.0&appId=1946793312448448" nonce="z9CY1eia"></script>
             <h1 className='text-center my-4 fw-bold'>Login Page</h1>
             <br />
             <center>
