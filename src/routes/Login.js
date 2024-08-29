@@ -18,7 +18,7 @@ const Login = () => {
         FB.getLoginStatus(function (response) {
             console.log(response);
             if (response.status === 'connected') { 
-                // navigate('/loggedin')
+                navigate('/loggedin')
             } 
         });
 
