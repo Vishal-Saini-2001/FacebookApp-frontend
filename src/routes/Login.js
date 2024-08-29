@@ -14,6 +14,13 @@ const Login = () => {
           });
     }
 
+    
+    function checkLoginState() {
+        FB.getLoginStatus(function(response) {
+        statusChangeCallback(response);
+        });
+    }
+
     useEffect(() => {
         FB.getLoginStatus(function (response) {
             console.log(response);
@@ -28,8 +35,11 @@ const Login = () => {
         <div>
             <h1 className='text-center my-4 fw-bold'>Login Page</h1>
             <br />
-            <center>
-                <button className='btn btn-primary p-3 fw-bold fs-4' onClick={handleLoginClick}>Login With Facebook</button>
+            <center> 
+                <fb:login-button 
+                    config_id="864238035269758"
+                    onlogin="checkLoginState();">
+                </fb:login-button>
             </center>
         </div>
     )
