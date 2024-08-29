@@ -10,7 +10,7 @@ function App() {
         <Routes>
           <Route exact path='/' element={<Login />}></Route>
           <Route exact path='/loggedin' element={<Loggedin/>}></Route>
-          <Route exact path='/terms-of-service' element={<Policy />}></Route>
+          <Route exact path='/policy' element={<Policy />}></Route>
         </Routes>
       </Router>
     </>
