@@ -1,11 +1,15 @@
-
-import './App.css';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import TermsOfService from './routes/TermsOfService'
 
 function App() {
   return (
-    <div className="App">
-      
-    </div>
+    <>
+    <Router>
+      <Routes>
+        <Route exact path='/terms-of-service' element={<TermsOfService/>}></Route>
+      </Routes>
+    </Router>
+    </>
   );
 }
 
